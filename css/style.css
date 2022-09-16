@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: .5vh;
+    margin-left: .5vh;
+    width: 100vw;
+    height: 400vh;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: .015fr .015fr 1fr .05fr;
+    grid-template-areas:"header header header header"
+                        "nav nav nav nav"
+                        "main main main main"
+                        "footer footer footer footer";
+                        
+}
+
+header {
+
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "logow logom . . rs";
+}
+
+.logo-whatsapp {
+    grid-area: logow;
+    width: 20px;
+    height: 20px;
+}
+
+.logo-mail {
+    grid-area: logom;
+    width: 30px;
+    height: 20px;
+}
+
+.red-social {
+    grid-area: rs;
+}
+
+
+/* nav {
+    margin-bottom: 1vh;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "logonav . . ulnav";
+    justify-content: center;
+    align-items: center;
+} */
+
+.logo1 {
+    width: 150px;
+    height: 87px;
+
+    grid-area: logonav;
+}
+
+/* nav ul {
+    display: flex;
+    grid-area: ulnav;
+    list-style-type: none;
+    padding: ;
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ */
+
+nav {
+    
+}
+
+ nav ul{
+    text-align: right;
+    position: absolute;
+    top: 6vh;
+    right: 1vw;
+    font-size: larger;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+
+nav ul li{
+
+    background-color: #24906A;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+main {
+    grid-area: main;
+}
+
+#main-image {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+#slogan {
+    position: absolute;
+    top: 50vh;
+    right: 20vw;
+    padding: 2%;
+    border-color: black;
+    background-color: white;
+}
+
+#aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+#aboutUs img{
+    float:left;
+    width: 30%;
+}
+
+#box-aboutus {
+    flex-direction: column;
+    float:right;
+    width: 70%;
+}
+
+
+#carrusel {
+    display: flex;
+}
+
+#foto-carrusel1 {
+    float: left;
+    width: 50%;
+}
+
+
+#foto-carrusel2 {
+    float:right;
+    width: 50%;
+}
+
+
+
+#referenciasIndex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    grid-area: footer;
+    height: 10%;
+    background-color:darkgray;
+}
+
+
+.logo2{
+    margin-left: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+
+table{
+    float:right;
+    margin-right: 4vw;
+    margin-top: 2vw;
+    font-size: x-large;
+    border: none;
+    
+}
+
+td{
+    color: black;
+    padding: 0 1rem;
+    
+}
+
+td a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+th{
+    font-size: xx-large;
+
+}
+
+
+
+
+main-admin {
+    grid-area: main;
+    
+}
